@@ -1,0 +1,5 @@
+Skipping image OS validation for hb__1831f16f78bc17cf22682106123af4f5: docker inspect returned 1
+Collecting main service artifacts
+Trial log-report__weofyPV failed: No reward file found at G:\My Drive\Handshake AI work\log-report\jobs\2026-07-10__23-49-04\log-report__weofyPV\verifier\reward.txt or G:\My Drive\Handshake AI work\log-report\jobs\2026-07-10__23-49-04\log-report__weofyPV\verifier\reward.json
+Exception RewardFileNotFoundError is in exclude_exceptions, not retrying
+Not retrying trial because the exception is not in include_exceptions or the maximum number of retries has been reached

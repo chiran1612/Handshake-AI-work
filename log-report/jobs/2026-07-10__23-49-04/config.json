@@ -1,0 +1,12 @@
+{
+    "jobs_dir": "G:\\My Drive\\Handshake AI work\\log-report\\jobs",
+    "environment": {
+        "type": "docker",
+        "force_build": true
+    },
+    "tasks": [
+        {
+            "path": "G:\\My Drive\\Handshake AI work\\log-report"
+        }
+    ]
+}

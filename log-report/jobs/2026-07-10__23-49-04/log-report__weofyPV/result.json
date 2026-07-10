@@ -1,0 +1,109 @@
+{
+    "id": "d235ffae-cace-44b2-8638-ae8262f979f7",
+    "task_name": "dynamo/log-report",
+    "trial_name": "log-report__weofyPV",
+    "trial_uri": "file:///G:/My%20Drive/Handshake%20AI%20work/log-report/jobs/2026-07-10__23-49-04/log-report__weofyPV",
+    "task_id": {
+        "path": "G:\\My Drive\\Handshake AI work\\log-report"
+    },
+    "source": null,
+    "task_checksum": "a7b9c088320b4d03f60117dfb3adfaadf5406979df2f4d288c967ba94f7c75c5",
+    "config": {
+        "task": {
+            "path": "G:\\My Drive\\Handshake AI work\\log-report",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "log-report__weofyPV",
+        "trials_dir": "G:\\My Drive\\Handshake AI work\\log-report\\jobs\\2026-07-10__23-49-04",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": true,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "06784a41-cce1-4097-88d3-db7d4bf51100"
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": {
+        "n_input_tokens": null,
+        "n_cache_tokens": null,
+        "n_output_tokens": null,
+        "cost_usd": null,
+        "rollout_details": null,
+        "metadata": null
+    },
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RewardFileNotFoundError",
+        "exception_message": "No reward file found at G:\\My Drive\\Handshake AI work\\log-report\\jobs\\2026-07-10__23-49-04\\log-report__weofyPV\\verifier\\reward.txt or G:\\My Drive\\Handshake AI work\\log-report\\jobs\\2026-07-10__23-49-04\\log-report__weofyPV\\verifier\\reward.json",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Admin\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\trial.py\", line 353, in run\n    await self._run()\n  File \"C:\\Users\\Admin\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\single_step.py\", line 52, in _run\n    await self._run_verifier()\n  File \"C:\\Users\\Admin\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\single_step.py\", line 105, in _run_verifier\n    self.result.verifier_result = await self._run_shared_verifier(\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n    )\n    ^\n  File \"C:\\Users\\Admin\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\trial\\trial.py\", line 527, in _run_shared_verifier\n    return await asyncio.wait_for(\n           ^^^^^^^^^^^^^^^^^^^^^^^\n        verifier.verify(), timeout=timeout_sec\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Python314\\Lib\\asyncio\\tasks.py\", line 488, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"C:\\Users\\Admin\\AppData\\Roaming\\uv\\tools\\harbor\\Lib\\site-packages\\harbor\\verifier\\verifier.py\", line 232, in verify\n    raise RewardFileNotFoundError(\n    ...<3 lines>...\n    )\nharbor.verifier.verifier.RewardFileNotFoundError: No reward file found at G:\\My Drive\\Handshake AI work\\log-report\\jobs\\2026-07-10__23-49-04\\log-report__weofyPV\\verifier\\reward.txt or G:\\My Drive\\Handshake AI work\\log-report\\jobs\\2026-07-10__23-49-04\\log-report__weofyPV\\verifier\\reward.json\n",
+        "occurred_at": "2026-07-10T23:49:26.144959"
+    },
+    "started_at": "2026-07-10T18:19:05.021862Z",
+    "finished_at": "2026-07-10T18:19:36.989054Z",
+    "environment_setup": {
+        "started_at": "2026-07-10T18:19:05.591595Z",
+        "finished_at": "2026-07-10T18:19:23.392058Z"
+    },
+    "agent_setup": {
+        "started_at": "2026-07-10T18:19:23.392112Z",
+        "finished_at": "2026-07-10T18:19:23.392174Z"
+    },
+    "agent_execution": {
+        "started_at": "2026-07-10T18:19:23.392248Z",
+        "finished_at": "2026-07-10T18:19:24.420500Z"
+    },
+    "verifier": {
+        "started_at": "2026-07-10T18:19:24.825731Z",
+        "finished_at": "2026-07-10T18:19:26.112950Z"
+    },
+    "step_results": null
+}

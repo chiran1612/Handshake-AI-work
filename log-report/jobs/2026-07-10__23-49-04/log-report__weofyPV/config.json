@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "G:\\My Drive\\Handshake AI work\\log-report"
+    },
+    "trial_name": "log-report__weofyPV",
+    "trials_dir": "G:\\My Drive\\Handshake AI work\\log-report\\jobs\\2026-07-10__23-49-04",
+    "environment": {
+        "type": "docker",
+        "force_build": true
+    },
+    "job_id": "06784a41-cce1-4097-88d3-db7d4bf51100"
+}

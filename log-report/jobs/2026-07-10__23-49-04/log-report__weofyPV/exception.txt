@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "C:\Users\Admin\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 353, in run
+    await self._run()
+  File "C:\Users\Admin\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\single_step.py", line 52, in _run
+    await self._run_verifier()
+  File "C:\Users\Admin\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\single_step.py", line 105, in _run_verifier
+    self.result.verifier_result = await self._run_shared_verifier(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "C:\Users\Admin\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\trial\trial.py", line 527, in _run_shared_verifier
+    return await asyncio.wait_for(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+        verifier.verify(), timeout=timeout_sec
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Python314\Lib\asyncio\tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\uv\tools\harbor\Lib\site-packages\harbor\verifier\verifier.py", line 232, in verify
+    raise RewardFileNotFoundError(
+    ...<3 lines>...
+    )
+harbor.verifier.verifier.RewardFileNotFoundError: No reward file found at G:\My Drive\Handshake AI work\log-report\jobs\2026-07-10__23-49-04\log-report__weofyPV\verifier\reward.txt or G:\My Drive\Handshake AI work\log-report\jobs\2026-07-10__23-49-04\log-report__weofyPV\verifier\reward.json
